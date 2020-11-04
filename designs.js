@@ -26,7 +26,7 @@ formSubmit.addEventListener('submit', function(e) {
 canvasClick.addEventListener('click', function(ev) {
   if (ev.target.nodeName === 'TD') {
       ev.target.style.backgroundColor = colorPick.value;
-      e.preventDefault();
+      ev.preventDefault();
   }
 });
     
