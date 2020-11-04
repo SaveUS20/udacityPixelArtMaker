@@ -16,8 +16,8 @@ const canvasClick = document.getElementById('pixelCanvas');
 formSubmit.addEventListener('submit', function(e) {
     canvasClick.innerHTML = ' '; // This removes any prior grid. Basically, this ensures that if a user subsequently puts in different values to draw the grid, the previous values are not added to the newly chosen values.
     e.preventDefault(); //This ensures that we will be able to handle the submit event ourselves, not the default browser.
-    const height = heightPick.value; //This turns height into a value.
-    const width = widthPick.value; //This turns width into a value.
+    const height = heightPick.value; //This turns height into a number.
+    const width = widthPick.value; //This turns width into a number.
     makeGrid(); // We call the function drawing the canvas (see below). 
 });
 
