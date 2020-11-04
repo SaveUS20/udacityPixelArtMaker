@@ -2,7 +2,7 @@
 const colorPick = document.getElementById('colorPicker'); 
 
 
-// These get us dynamically the reference ID for the width and height. 
+// These get us dynamically the reference ID for the width and height of the canvas. 
 const widthPick = document.getElementById('inputWidth'); 
 const heightPick = document.getElementById('inputHeight');
 
@@ -12,7 +12,7 @@ const formSubmit = document.getElementById('sizePicker');
 const canvasClick = document.getElementById('pixelCanvas');  
 
 
-// When the user "submits" their choice of the size of the table, we call the function makeGrid through an EventListener.
+// When the user "submits" their choice of the size of the table, we add an EventListener and call the function makeGrid (which draws the canvas).
 formSubmit.addEventListener('submit', function(e) {
     canvasClick.innerHTML = ' '; // This removes any prior grid. Basically, this ensures that if a user subsequently puts in different values to draw the grid, the previous values are not added to the newly chosen values.
     e.preventDefault(); //This ensures that we will be able to handle the submit event ourselves, not the default browser.
