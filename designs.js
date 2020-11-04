@@ -1,9 +1,11 @@
 // This gets us dynamically the reference ID for the color.
 const colorPick = document.getElementById('colorPicker'); 
 
+
 // These get us dynamically the reference ID for the width and height. 
 const widthPick = document.getElementById('inputWidth'); 
 const heightPick = document.getElementById('inputHeight');
+
 
 // This gets us dynamically the reference ID for the 'sizePicker' and 'pixelCanvas'. 
 const formSubmit = document.getElementById('sizePicker');
